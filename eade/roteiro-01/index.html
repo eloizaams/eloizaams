@@ -40,7 +40,7 @@
 
   .kicker{
     font-size:0.85rem;
-    letter-spacing:0.24em;
+    letter-spacing:0.13em;
     text-transform:uppercase;
     color:var(--accent);
     font-weight:600;
@@ -93,9 +93,9 @@
   .source{
     position:absolute;
     bottom:2.4rem; right:8vw;
-    font-size:0.95rem;
-    font-style:italic;
-    color:rgba(207,211,230,0.65);
+    font-size:1rem;
+    font-style:normal;
+    color:rgba(207,211,230,0.82);
     max-width:46ch;
     text-align:right;
     line-height:1.35;
@@ -160,7 +160,7 @@
     font-size:1.15rem;
     line-height:1.5;
     color:var(--ink-soft);
-    font-style:italic;
+    font-style:normal;
     max-width:58ch;
   }
   blockquote cite{
@@ -382,6 +382,12 @@
     color:var(--accent);
     line-height:1.1;
   }
+  .step.concl .n{
+    font-size:1.05rem;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    white-space:nowrap;
+  }
   .step p{margin:0; font-size:1.22rem; line-height:1.4; color:var(--ink-soft);}
   .step.concl p{color:var(--ink); font-weight:600;}
 
@@ -392,9 +398,17 @@
     margin-top:0.4rem;
     font-size:1.45rem;
     line-height:1.5;
-    font-style:italic;
+    font-style:normal;
     color:var(--ink);
     max-width:54ch;
+  }
+
+  /* Nota curta e discreta dentro de cartão (ex.: referência, ressalva) */
+  .dim-note{
+    margin-top:0.6rem;
+    font-size:0.9rem;
+    line-height:1.4;
+    color:rgba(207,211,230,0.85);
   }
 
   /* Etiqueta de natureza da fonte */
@@ -432,6 +446,7 @@
   .slide.dense h2.slide-title{font-size:2rem; margin-bottom:1rem; max-width:34ch;}
   .slide.dense .kicker{margin-bottom:1rem;}
   .slide.dense .source{font-size:0.8rem; bottom:1.6rem;}
+  .slide.dense .statement{font-size:1.9rem; max-width:64ch;}
 
   @media (max-width: 900px){
     h1, .title-block h1{font-size:2.3rem;}
@@ -580,7 +595,7 @@
 
   <!-- 2. AGENDA -->
    <section class="slide">
-    <div class="kicker">O caminho de hoje</div>
+    <div class="kicker">Resumo do encontro</div>
     <h2 class="slide-title">Três perguntas:</h2>
     <div class="cards c3">
       <div class="card">
@@ -589,20 +604,20 @@
       </div>
       <div class="card">
         <span class="num">Segunda</span>
-        <h3>Como se sai do politeísmo sem um salto?</h3>
+        <h3>Como o politeísmo virou monoteísmo, aos poucos?</h3>
       </div>
       <div class="card">
         <span class="num">Terceira</span>
         <h3>O que os hebreus fizeram de novo?</h3>
       </div>
     </div>
-    <div class="note">Objetivos do roteiro: elaborar a linha histórica da ideia de Deus e explicar politeísmo e monoteísmo à luz do entendimento espírita.</div>
+    <div class="note">Objetivos do roteiro: elaborar a linha histórica da ideia de Deus e explicar politeísmo e monoteísmo à luz do entendimento espírita. As três perguntas acima são respondidas, uma a uma, ao longo desta apresentação — e recapituladas no final.</div>
   </section>
 
   <!-- 3. A TESE -->
   <section class="slide">
-    <div class="kicker">A chave de tudo</div>
-    <p class="statement">A <span class="highlight">compreensão humana</span> de Deus não nasceu pronta. Ela cresce na mesma medida em que o ser humano cresce em inteligência e em moral.</p>
+    <div class="kicker">Ideia central do roteiro</div>
+    <p class="statement">A <span class="highlight">compreensão humana</span> de Deus não nasceu pronta. Ela se desenvolve na mesma medida em que o ser humano se desenvolve em inteligência e em moral.</p>
     <div class="note">O que evolui não é Deus — é a capacidade de concebê-lo. Se o homem primitivo pensava Deus de modo tosco, não foi por maldade: a compreensão de Deus é limitada pelo estágio evolutivo de quem compreende. É isso que nos permite olhar sem julgamento para os ídolos — e para os sacrifícios.</div>
     <div class="pullquote" style="font-size:1.15rem;">"A concepção de um Deus único não poderia existir no homem, senão como resultado do <strong>desenvolvimento de suas ideias</strong>."</div>
     <div class="source">
@@ -617,17 +632,17 @@
     <div class="kicker">Onde estamos na história</div>
     <h2 class="slide-title">A ideia de Deus, marco a marco</h2>
     <div class="timeline">
-      <div class="tl-row hist"><span class="tl-when">Pré-história</span><span class="tl-dot"></span><span class="tl-what">Sepultamentos intencionais, com pigmento e objetos — <strong>tratamento simbólico dos mortos</strong> (significado debatido)</span></div>
-      <div class="tl-row hist"><span class="tl-when">~35.000 a.C.</span><span class="tl-dot"></span><span class="tl-what">Grutas pintadas, santuários, estatuetas — arte simbólica; a função religiosa é interpretação, não dado</span></div>
-      <div class="tl-row"><span class="tl-when">Período anímico</span><span class="tl-dot"></span><span class="tl-what">Litolatria, fitolatria, zoolatria, idolatria — <strong>visão fragmentária do divino:</strong> muitos poderes</span></div>
+      <div class="tl-row hist"><span class="tl-when">Pré-história</span><span class="tl-dot"></span><span class="tl-what"><strong>[Contexto histórico]</strong> Sepultamentos intencionais, com pigmento e objetos — tratamento simbólico dos mortos (significado debatido)</span></div>
+      <div class="tl-row hist"><span class="tl-when">~35.000 a.C.</span><span class="tl-dot"></span><span class="tl-what"><strong>[Contexto histórico]</strong> Grutas pintadas, santuários, estatuetas — arte simbólica; a função religiosa é interpretação, não dado</span></div>
+      <div class="tl-row"><span class="tl-when">Período anímico</span><span class="tl-dot"></span><span class="tl-what">Período anímico (fase em que se cria que espíritos animam objetos e fenômenos da natureza): litolatria, fitolatria, zoolatria, idolatria — <strong>visão fragmentária do divino:</strong> muitos poderes</span></div>
       <div class="tl-row"><span class="tl-when">Da idolatria</span><span class="tl-dot"></span><span class="tl-what">Nasce a mitologia — politeísmo em forma clássica</span></div>
-      <div class="tl-row"><span class="tl-when">Antiguidade</span><span class="tl-dot"></span><span class="tl-what">Hierarquia de divindades: um deus maior governa os menores — <strong>a primeira ponte</strong></span></div>
-      <div class="tl-row hist"><span class="tl-when">Egito, Índia, Grécia</span><span class="tl-dot"></span><span class="tl-what">"Iniciados" já concebem Deus único — mas ocultam do povo</span></div>
-      <div class="tl-row"><span class="tl-when">Moisés · Sinai</span><span class="tl-dot"></span><span class="tl-what">Decálogo: o monoteísmo se torna <strong>público</strong></span></div>
+      <div class="tl-row"><span class="tl-when">Antiguidade</span><span class="tl-dot"></span><span class="tl-what">Hierarquia de divindades: um deus maior governa os menores — <strong>a primeira etapa de transição para o monoteísmo</strong></span></div>
+      <div class="tl-row hist"><span class="tl-when">Egito, Índia, Grécia</span><span class="tl-dot"></span><span class="tl-what"><strong>[Contexto histórico]</strong> "Iniciados" já concebem Deus único — mas ocultam do povo</span></div>
+      <div class="tl-row"><span class="tl-when">Moisés · Sinai</span><span class="tl-dot"></span><span class="tl-what">Decálogo (os Dez Mandamentos): o monoteísmo se torna <strong>público</strong></span></div>
       <div class="tl-row"><span class="tl-when">Jesus</span><span class="tl-dot"></span><span class="tl-what">Reduz a lei a "amar a Deus e ao próximo" — Deus Pai</span></div>
       <div class="tl-row"><span class="tl-when">Espiritismo</span><span class="tl-dot"></span><span class="tl-what">Deus como Inteligência Suprema — sem forma, sem antropomorfismo</span></div>
     </div>
-    <div class="legend"><span class="tl-dot" style="display:inline-block;vertical-align:middle;margin-right:.4rem;"></span> fundamento doutrinário citado &nbsp;&nbsp; <span class="tl-dot" style="display:inline-block;vertical-align:middle;margin-right:.4rem;background:transparent;border:2px solid rgba(207,211,230,0.45);"></span> contexto histórico geral — <strong>não é Doutrina Espírita</strong> e não pode ser atribuído a Kardec nem aos Espíritos</div>
+    <div class="legend"><span class="tl-dot" style="display:inline-block;vertical-align:middle;margin-right:.4rem;"></span> fundamento doutrinário citado &nbsp;&nbsp; <span class="tl-dot" style="display:inline-block;vertical-align:middle;margin-right:.4rem;background:transparent;border:2px solid rgba(207,211,230,0.45);"></span> marcado como <strong>[Contexto histórico]</strong> — <strong>não é Doutrina Espírita</strong> e não pode ser atribuído a Kardec nem aos Espíritos</div>
   </section>
 
   <!-- 5. EVIDÊNCIAS PRÉ-HISTÓRICAS -->
@@ -669,30 +684,30 @@
 
   <!-- 7. TRÊS CAUSAS DO POLITEÍSMO -->
   <section class="slide dense">
-    <div class="index-tag">Objetivo 2 — politeísmo</div>
-    <div class="kicker">Não é uma causa só</div>
+    <div class="index-tag">Responde à pergunta 1 · Objetivo 2 — politeísmo</div>
+    <div class="kicker">As três causas do politeísmo</div>
     <h2 class="slide-title">Por que muitos deuses? Três razões que se somam</h2>
     <div class="cards c3">
       <div class="card">
         <span class="num">Causa 1</span>
         <h3>Não conseguia imaginar um ser sem forma</h3>
         <p>Tudo o que ultrapassava sua compreensão virava divindade.</p>
-        <p style="margin-top:.6rem;font-size:.82rem;color:rgba(207,211,230,.65)">O Livro dos Espíritos, q. 667</p>
+        <p class="dim-note">O Livro dos Espíritos, q. 667</p>
       </div>
       <div class="card">
         <span class="num">Causa 2</span>
         <h3>Não sabia que os atributos de Deus são infinitos</h3>
         <p>Não sabendo que um só Deus pode tudo, distribuiu o "tudo" entre vários — um para cada poder observado.</p>
-        <p style="margin-top:.6rem;font-size:.82rem;color:rgba(207,211,230,.65)">A Gênese, cap. II, item 17</p>
+        <p class="dim-note">A Gênese, cap. II, item 17</p>
       </div>
       <div class="card">
         <span class="num">Causa 3</span>
         <h3>Confundia Espíritos com deuses</h3>
-        <p>Os fenômenos mediúnicos sempre existiram. Faltava a chave para lê-los.</p>
-        <p style="margin-top:.6rem;font-size:.82rem;color:rgba(207,211,230,.65)">O Livro dos Espíritos, q. 668</p>
+        <p>Os fenômenos mediúnicos sempre existiram, mas faltava o conhecimento necessário para interpretá-los corretamente.</p>
+        <p class="dim-note">O Livro dos Espíritos, q. 668</p>
       </div>
     </div>
-    <div class="note">A causa 3 é a contribuição própria da <strong>leitura espírita</strong> do politeísmo: os fenômenos mediúnicos sempre existiram — faltava a chave para interpretá-los.</div>
+    <div class="note">A causa 3 é a contribuição própria da <strong>leitura espírita</strong> do politeísmo: os fenômenos mediúnicos sempre existiram — faltava o conhecimento necessário para interpretá-los. <strong>Resposta à pergunta 1:</strong> o homem começou adorando muitos deuses por essas três razões combinadas.</div>
   </section>
 
   <!-- 8. TRADUÇÃO DEUS = ESPÍRITO -->
@@ -703,7 +718,7 @@
       <tr><th style="width:50%">O antigo dizia</th><th>Nós dizemos</th></tr>
       <tr><td>"deus"</td><td>Espírito</td></tr>
       <tr><td>divindade pagã</td><td>Espírito num grau da escala espírita</td></tr>
-      <tr><td>poder sobrenatural</td><td>propriedade do perispírito</td></tr>
+      <tr><td>poder sobrenatural</td><td>propriedade do perispírito (o corpo semimaterial do Espírito)</td></tr>
     </table>
     <div class="pullquote" style="font-size:1.2rem;margin-top:1.4rem;">"A esses seres deram eles o nome de deuses, como lhes damos atualmente o de Espíritos. <strong>Pura questão de palavras</strong> — com a diferença de que eles erigiram templos e altares muito lucrativos a tais deuses."</div>
     <div class="source">
@@ -722,7 +737,7 @@
       <div class="card"><h3>Zoolatria</h3><p>Animais.<br><em>Touro, gato, serpente.</em></p></div>
       <div class="card"><h3>Idolatria</h3><p>Ídolos — imagens fabricadas.<br><em>Estatuetas, totens.</em></p></div>
     </div>
-    <div class="note" style="margin-top:1.4rem;">Como o <strong>roteiro da FEB</strong> descreve o encadeamento — é o modelo explicativo do roteiro, não uma sequência histórica universal:</div>
+    <div class="note" style="margin-top:1.4rem;">Como o <strong>roteiro da FEB</strong> descreve o encadeamento — é o modelo explicativo do roteiro, não uma sequência histórica universal. Cada seta abaixo significa "deu origem a":</div>
     <div class="flow" style="margin-top:0.8rem;">
       <div class="flow-step"><span class="lbl">Adorar coisas</span></div>
       <span class="flow-arrow">&#8594;</span>
@@ -741,15 +756,15 @@
   <!-- 10. SACRIFÍCIOS -->
   <section class="slide">
     <div class="kicker">O ponto mais difícil</div>
-    <h2 class="slide-title">Os sacrifícios tinham uma lógica — falsa, mas lógica</h2>
+    <h2 class="slide-title">Os sacrifícios seguiam um raciocínio coerente, baseado numa crença errada</h2>
     <div class="flow">
       <div class="flow-step"><span class="lbl">Frutos</span></div>
       <span class="flow-arrow">&#8594;</span>
       <div class="flow-step"><span class="lbl">Animais</span></div>
       <span class="flow-arrow">&#8594;</span>
-      <div class="flow-step final"><span class="lbl">Seres humanos</span></div>
+      <div class="flow-step final"><span class="lbl">Seres humanos</span><span class="sub">ponto mais grave da escalada, não um ápice positivo</span></div>
     </div>
-    <p class="body-text" style="margin-top:1.6rem;">Não foi crueldade crescente. Foi <span class="highlight">"generosidade" crescente</span> dentro de uma crença errada: se o sacrifício agrada a Deus, quanto mais valiosa a vítima, melhor.</p>
+    <p class="body-text" style="margin-top:1.6rem;">Não foi crueldade crescente. O sacrificador acreditava estar sendo cada vez mais generoso com Deus dentro de uma crença errada: se o sacrifício agrada a Deus, quanto mais valiosa a vítima, melhor. A crença era falsa — a intenção era de oferta, não de crueldade deliberada.</p>
     <div class="pullquote" style="font-size:1.15rem;">"Nos povos primitivos, a matéria sobrepuja o espírito [...] é que neles o senso moral ainda não se acha desenvolvido."</div>
     <div class="source">
       <span class="cite-label">Fonte</span>
@@ -759,14 +774,14 @@
 
   <!-- 11. A PONTE -->
   <section class="slide">
-    <div class="index-tag">O elo do roteiro</div>
+    <div class="index-tag">Responde à pergunta 2</div>
     <div class="kicker">Como se sai do politeísmo</div>
-    <h2 class="slide-title">O monoteísmo germinou dentro do politeísmo</h2>
+    <h2 class="slide-title">O monoteísmo nasceu de dentro das próprias ideias politeístas</h2>
     <div class="steps">
       <div class="step"><span class="n">1</span><p>Há muitos deuses.</p></div>
       <div class="step"><span class="n">2</span><p>Mas um deles manda nos outros — senão, seria o caos.</p></div>
       <div class="step"><span class="n">3</span><p>Então o poder verdadeiro está nesse; os demais são subalternos.</p></div>
-      <div class="step concl"><span class="n">&#8756;</span><p>Logo, há um só Deus.</p></div>
+      <div class="step concl"><span class="n">Logo</span><p>Há um só Deus.</p></div>
     </div>
     <div class="note">"Foi uma conquista lenta, seguida de estágios preparatórios, <strong>nascida no seio das próprias doutrinas politeístas</strong>." — Roteiro 1, p. 20.</div>
     <div class="source">
@@ -785,13 +800,13 @@
         <span class="num">Contexto histórico</span>
         <h3>O que se sabe</h3>
         <p>Por volta de 1350 a.C., o faraó Akhenaton impôs o culto exclusivo a Aton, rompendo com a tradição religiosa egípcia. Após sua morte, a reforma foi revertida e seu nome, apagado dos monumentos.</p>
-        <p style="margin-top:.6rem;font-size:.86rem;color:rgba(207,211,230,.7)">Egiptólogos discutem se foi monoteísmo ou monolatria, e atribuem a reversão a vários fatores — entre eles o interesse do sacerdócio de Amon e o caráter imposto da reforma.</p>
+        <p class="dim-note">Egiptólogos discutem se foi monoteísmo ou monolatria, e atribuem a reversão a vários fatores — entre eles o interesse do sacerdócio de Amon e o caráter imposto da reforma.</p>
       </div>
       <div class="card">
         <span class="num">Leitura espírita</span>
         <h3>Como o Espiritismo lê casos assim</h3>
         <p>A unidade de Deus, quando concebida por poucos, não se tornava crença aceita: permanecia "sistema pessoal", guardada por iniciados.</p>
-        <p style="margin-top:.6rem;font-size:.86rem;color:rgba(207,211,230,.7)">Kardec não fala de Akhenaton nem do Egito neste trecho — ele descreve o padrão geral. O caso egípcio é ilustração nossa, não prova doutrinária.</p>
+        <p class="dim-note">Kardec não fala de Akhenaton nem do Egito neste trecho — ele descreve o padrão geral. O caso egípcio é ilustração nossa, não prova doutrinária.</p>
       </div>
     </div>
     <div class="pullquote" style="font-size:1.1rem;margin-top:1.2rem;">"Essa ideia permaneceu no estado de sistema pessoal [...] a não ser por alguns iniciados que ocultavam seus conhecimentos sob um véu de mistério, impenetrável para as massas populares."</div>
@@ -803,7 +818,7 @@
 
   <!-- 13. O SALTO HEBREU -->
   <section class="slide">
-    <div class="index-tag">Objetivo 2 — monoteísmo</div>
+    <div class="index-tag">Responde à pergunta 3 · Objetivo 2 — monoteísmo</div>
     <div class="kicker">O que mudou de fato</div>
     <h2 class="slide-title">A novidade não foi o Deus único. Foi torná-lo público.</h2>
     <table class="compare">
@@ -869,9 +884,26 @@
   </section>
 
   <!-- 17. SÍNTESE -->
-  <section class="slide">
+  <section class="slide dense">
     <div class="kicker">Para levar do encontro — a leitura espírita</div>
-    <p class="statement">Do medo de muitos deuses ao amor de um só Pai — <span class="highlight">a Humanidade não trocou de religião: ela cresceu.</span></p>
+    <p class="statement">Do medo de muitos deuses ao amor de um só Pai — <span class="highlight">a Humanidade não trocou de religião: ela evoluiu na capacidade de compreender Deus.</span></p>
+    <div class="cards c3" style="margin-top:1.4rem;">
+      <div class="card">
+        <span class="num">Pergunta 1</span>
+        <h3>Por que muitos deuses?</h3>
+        <p>Não sabia conceber um ser sem forma, nem que os atributos de Deus são infinitos, e confundia Espíritos com deuses.</p>
+      </div>
+      <div class="card">
+        <span class="num">Pergunta 2</span>
+        <h3>Como saiu do politeísmo?</h3>
+        <p>Uma hierarquia entre as divindades preparou o caminho para a ideia de um só Deus verdadeiro.</p>
+      </div>
+      <div class="card">
+        <span class="num">Pergunta 3</span>
+        <h3>O que os hebreus fizeram de novo?</h3>
+        <p>Tornaram pública, com Moisés, a ideia de Deus único que antes só os iniciados guardavam em segredo.</p>
+      </div>
+    </div>
     <div class="pullquote" style="font-size:1.2rem;margin-top:1.4rem;">"Jesus não veio destruir a lei [...] reduzindo-as a esta única prescrição: 'Amar a Deus acima de todas as coisas e o próximo como a si mesmo', e acrescentando: aí estão a lei toda e os profetas."</div>
     <div class="source">
       <span class="cite-label">Fonte</span>
@@ -893,7 +925,7 @@
     <div class="index-tag">Para discussão 1/6</div>
     <div class="kicker">Para refletir em grupo</div>
     <p class="question">Onde você reconhece o antropomorfismo na sua própria fé?</p>
-    <p class="body-text" style="margin-bottom:1.4rem;">Em orações que pedem que Deus "mude de ideia"? Na imagem de um Deus que se ofende, que pune, que escolhe favoritos?</p>
+    <p class="body-text" style="margin-bottom:1.4rem;"><strong>Exemplos para refletir:</strong> orações que pedem que Deus "mude de ideia"; a imagem de um Deus que se ofende, que pune, que escolhe favoritos.</p>
     <div class="quotes-wrap">
       <blockquote>"Nos tempos primeiros, como na atualidade, o homem teve uma concepção antropomórfica de Deus."
         <cite>XAVIER, F. C. (psicografia). Emmanuel, Cap. XV, item "O Antropomorfismo", p. 41.</cite>
@@ -919,7 +951,7 @@
     <div class="index-tag">Para discussão 3/6</div>
     <div class="kicker">Para refletir em grupo</div>
     <p class="question">Que critério isso nos dá para julgar o passado — e o presente?</p>
-    <p class="body-text" style="margin-bottom:1.4rem;">Os sacrifícios são explicados por senso moral não desenvolvido, não por maldade. Como julgaremos práticas de outras culturas hoje? E como as nossas serão julgadas daqui a 200 anos?</p>
+    <p class="body-text" style="margin-bottom:1.4rem;">Os sacrifícios são explicados por senso moral não desenvolvido, não por maldade. <strong>Exemplos para refletir:</strong> como julgaremos práticas de outras culturas hoje? Como as nossas serão julgadas daqui a 200 anos?</p>
     <div class="quotes-wrap">
       <blockquote>"Nos povos primitivos, a matéria sobrepuja o espírito; eles se entregam aos instintos do animal selvagem. Por isso é que, em geral, são cruéis; é que neles o senso moral ainda não se acha desenvolvido."
         <cite>KARDEC, Allan. O Livro dos Espíritos, questão 669, p. 313.</cite>
